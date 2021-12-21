@@ -10,7 +10,7 @@ const Header = function () {
     <Wrapper>
       <Hamburger toggled={isOpen} toggle={setOpen} />
       <Title title="QWERTY AB" />
-      {isOpen && <Menu isOpen={isOpen} />}
+      <Menu isOpen={isOpen} />
     </Wrapper>
   );
 };
