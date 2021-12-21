@@ -1,10 +1,38 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Homepage from './Pages/Homepage';
+import Products from './Pages/Products';
+import Offices from './Pages/Offices';
+import News from './Pages/News';
+import Contact from './Pages/Contact';
+import Carries from './Pages/Carries';
+import Header from './Organisms/Header/Header';
 
 const App = function () {
   return (
-    <div className="App">
-      <h1>Hello Worlds</h1>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+        <Route path="/products">
+          <Products />
+        </Route>
+        <Route path="/offices">
+          <Offices />
+        </Route>
+        <Route path="/carriers">
+          <Carries />
+        </Route>
+        <Route path="/news">
+          <News />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
