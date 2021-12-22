@@ -7,6 +7,7 @@ import News from './Pages/News';
 import Contact from './Pages/Contact';
 import Carries from './Pages/Carries';
 import Header from './Organisms/Header/Header';
+import ReadMoreProduct from './Pages/ReadMoreProduct';
 
 const App = function () {
   return (
@@ -16,8 +17,11 @@ const App = function () {
         <Route path="/" exact>
           <Homepage />
         </Route>
-        <Route path="/products">
+        <Route path="/products" exact>
           <Products />
+        </Route>
+        <Route path="/products/:id">
+          <ReadMoreProduct />
         </Route>
         <Route path="/offices">
           <Offices />

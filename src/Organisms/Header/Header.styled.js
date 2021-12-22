@@ -7,6 +7,11 @@ const Wrapper = styled.header`
   h1 {
     text-align: center;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+    margin-bottom: -3rem;
+  }
 `;
 
 export default Wrapper;

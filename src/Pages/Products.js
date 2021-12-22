@@ -1,10 +1,15 @@
 import React from 'react';
+import GeneralInformations from '../Organisms/GeneralInformations/GeneralInformations';
+import ProductContainer from '../Organisms/ProductContainer/ProductContainer';
+import Footer from '../Organisms/Footer/Footer';
 
 const Products = function () {
   return (
-    <div>
-      <h1>Products</h1>
-    </div>
+    <>
+      <GeneralInformations />
+      <ProductContainer />
+      <Footer />
+    </>
   );
 };
 

@@ -9,10 +9,11 @@ const Wrapper = styled.nav`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #e9c46a;
   transform: ${({ isOpen }) =>
     isOpen ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.3s ease-in-out;
+
 
   ul {
     padding: 0.5rem;
@@ -21,18 +22,36 @@ const Wrapper = styled.nav`
 
   & li {
     list-style: none;
-	  padding: 1rem;
+    padding: 1rem;
     margin: 1.5rem 0;
-    
+
     font-size: 1.4rem;
     letter-spacing: 4px;
     text-align: center;
 
     & a {
-	  	color: #000;
+      color: #000;
       text-decoration: none;
-	    display: block;
+      display: block;
     }
+  }
+
+  .selected {
+    color: #e76f51;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(0);
+	  background-color: #fff;
+    width: 100vw;
+    height: 14vh;
+
+
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }
 `;

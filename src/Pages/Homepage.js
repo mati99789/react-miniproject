@@ -1,10 +1,15 @@
 import React from 'react';
+import HeroContent from '../Molecules/HeroContent/HeroContent';
+import GeneralInformations from '../Organisms/GeneralInformations/GeneralInformations';
+import Footer from '../Organisms/Footer/Footer';
 
 const Homepage = function () {
   return (
-    <div>
-      <h1>HomePage</h1>
-    </div>
+    <>
+      <HeroContent />
+      <GeneralInformations />
+      <Footer />
+    </>
   );
 };
 

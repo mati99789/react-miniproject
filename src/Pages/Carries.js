@@ -1,9 +1,14 @@
 import React from 'react';
+import GeneralInformations from '../Organisms/GeneralInformations/GeneralInformations';
+import CarriersContainer from '../Organisms/CarriersContainer/CarriersContainer';
+import Footer from '../Organisms/Footer/Footer';
 
 const Carries = function () {
   return (
     <div>
-      <h1>Carriers</h1>
+      <GeneralInformations />
+      <CarriersContainer />
+      <Footer />
     </div>
   );
 };
