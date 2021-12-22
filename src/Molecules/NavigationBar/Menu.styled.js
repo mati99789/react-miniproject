@@ -9,7 +9,7 @@ const Wrapper = styled.nav`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #F5F5F5;
   transform: ${({ isOpen }) =>
     isOpen ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.3s ease-in-out;
@@ -18,21 +18,23 @@ const Wrapper = styled.nav`
     padding: 0.5rem;
     width: 100%;
   }
+
   & li {
     list-style: none;
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: red;
+	  padding: 1rem;
+    margin: 1.5rem 0;
+    
+    font-size: 1.4rem;
+    letter-spacing: 4px;
     text-align: center;
-    transition: 2s;
-    & a {
-      color: #fff;
-      text-decoration: none;
 
-      display: inline-block;
-    }
+    & a {
+	  	color: #000;
+      text-decoration: none;
+	    display: block;
     }
   }
+}
 `;
 
 export default Wrapper;
