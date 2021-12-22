@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 const ProductItem = function ({ id, name, info }) {
   function truncateString(str, num) {
@@ -13,7 +14,9 @@ const ProductItem = function ({ id, name, info }) {
     <div>
       <h3>{name}</h3>
       <p>{truncateString(info, 500)}</p>
-      <Link to={`/products/${id}`}>Read more</Link>
+      <Button type="button">
+        <Link to={`/products/${id}`}>Read more</Link>
+      </Button>
     </div>
   );
 };

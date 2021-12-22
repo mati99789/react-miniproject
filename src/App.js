@@ -8,6 +8,8 @@ import Contact from './Pages/Contact';
 import Carries from './Pages/Carries';
 import Header from './Organisms/Header/Header';
 import ReadMoreProduct from './Pages/ReadMoreProduct';
+import OfficeDetail from './Pages/OfficeDetail';
+import Error from './Pages/Error';
 
 const App = function () {
   return (
@@ -23,8 +25,11 @@ const App = function () {
         <Route path="/products/:id">
           <ReadMoreProduct />
         </Route>
-        <Route path="/offices">
+        <Route path="/offices" exact>
           <Offices />
+        </Route>
+        <Route path="/offices/:id">
+          <OfficeDetail />
         </Route>
         <Route path="/carriers">
           <Carries />
@@ -34,6 +39,9 @@ const App = function () {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="*">
+          <Error />
         </Route>
       </Switch>
     </Router>
