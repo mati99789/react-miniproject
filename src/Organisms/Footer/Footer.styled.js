@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 const FooterStyled = styled.footer`
   display: flex;
-  background-color: #264653;
+  background-color: #e9c46a;
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  border-radius: 15px;
 
   & div {
     display: flex;

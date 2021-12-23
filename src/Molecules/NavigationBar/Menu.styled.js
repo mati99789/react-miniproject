@@ -13,7 +13,7 @@ const Wrapper = styled.nav`
   transform: ${({ isOpen }) =>
     isOpen ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.3s ease-in-out;
-
+  
 
   ul {
     padding: 0.5rem;
@@ -42,7 +42,7 @@ const Wrapper = styled.nav`
 
   @media screen and (min-width: 768px) {
     transform: translateX(0);
-	  background-color: #fff;
+    background-color: #e9c46a;
     width: 100vw;
     height: 14vh;
 

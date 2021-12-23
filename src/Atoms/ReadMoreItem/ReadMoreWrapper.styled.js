@@ -4,8 +4,22 @@ const ReadMoreWrapperStyled = styled.div`
   max-width: 50vh;
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px #6e97c3;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  & h3 {
+    color: #264653;
+  }
+  
+  & a {
+    display: block;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;

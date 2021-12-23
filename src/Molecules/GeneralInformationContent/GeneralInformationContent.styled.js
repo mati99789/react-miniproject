@@ -4,6 +4,7 @@ const GeneralInformationContent = styled.article`
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
+  padding: 1.5rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

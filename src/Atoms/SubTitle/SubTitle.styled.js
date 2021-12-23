@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 const SubtStyle = styled.h2`
-  letterspacing: '3px';
-  fontsize: '1.3rem';
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  color: #264653;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: 4px;
 
     & img {

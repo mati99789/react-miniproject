@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const TitleStyle = styled.h1`
   letter-spacing: 3px;
   font-size: 2.5rem;
+  color: #264653;
 
   @media screen and (min-width: 768px) {
     & h1 {

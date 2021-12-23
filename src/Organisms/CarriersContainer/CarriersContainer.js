@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import CarriersStyle from './CarriersContainer.styled';
 import carriersData from '../../data/carriersdata.json';
 import Button from '../../Atoms/Button/Button';
+import SubTitle from "../../Atoms/SubTitle/SubTitle";
 
 const CarriersContainer = function () {
   return (
     <CarriersStyle>
+      <SubTitle title='Join to us!' />
       {carriersData.map((carrier) => {
         return (
           <div key={carrier.id}>
