@@ -6,6 +6,11 @@ const GeneralInformationContent = styled.article`
   margin: 2rem 0;
   padding: 1.5rem;
 
+  
+  & img {
+    border-radius: 15px;
+  }
+  
   @media screen and (min-width: 768px) {
     flex-direction: row;
     padding: 1rem;

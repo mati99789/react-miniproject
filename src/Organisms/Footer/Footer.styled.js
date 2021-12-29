@@ -15,6 +15,11 @@ const FooterStyled = styled.footer`
     align-items: center;
   }
 
+  & .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
   & a {
     font-size: 1.2rem;
     color: #fff;
@@ -31,6 +36,10 @@ const FooterStyled = styled.footer`
 
     & a {
       font-size: 1.6rem;
+    }
+    & .icon {
+      width: 30px;
+      height: 30px;
     }
   }
 `;

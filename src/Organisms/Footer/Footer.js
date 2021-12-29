@@ -8,15 +8,15 @@ const Footer = function () {
   return (
     <FooterStyled>
       <div>
-        <FcHome />
+        <FcHome className='icon'/>
         <Link to="/">Home</Link>
       </div>
       <div>
-        <FcNews />
+        <FcNews className='icon'/>
         <Link to="/offices">Office</Link>
       </div>
       <div>
-        <FcContacts />
+        <FcContacts className='icon'/>
         <Link to="/contact">Contact</Link>
       </div>
     </FooterStyled>

@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const HeroSection = styled.section`
   position: relative;
   min-height: 75vh;
-  margin-top: -5rem;
+  margin-top: 8rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   z-index: -1;
   display: flex;
   padding: 0.5rem;
@@ -16,14 +18,7 @@ const HeroSection = styled.section`
     height: 100%;
     top: -100px;
     left: 0;
-    background: rgb(231, 111, 81);
-    background: linear-gradient(
-      180deg,
-      rgba(231, 111, 81, 1) 0%,
-      rgba(233, 196, 106, 1) 42%,
-      rgba(38, 70, 83, 1) 100%
-    );
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, rgba(255, 175, 189, .7), rgba(100, 216, 243, .7), rgba(234, 236, 198, .7), rgba(245, 146, 176, .7), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://picsum.photos/g/2000/1200?image=443) 0 0 / cover no-repeat;
     z-index: -1;
     box-shadow: 0px 5px 15px -1px #264653;
     border-radius: 15px;
